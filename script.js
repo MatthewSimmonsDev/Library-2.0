@@ -24,12 +24,17 @@ function displayBookCards(){
     }
 }
 
+function hideAddButton(){
+    addBookBtn.setAttribute("style", "display:none")
+}
+
 function addBookCard(){
     const infoCard = document.createElement("div")
     infoCard.className = "add-book-btn-card" 
     addBookContainer.appendChild(infoCard)
 
     infoCard.textContent = "TEST"
+    hideAddButton()
 }
 
 
