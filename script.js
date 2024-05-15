@@ -1,4 +1,5 @@
 const cardContainer = document.querySelector("#container");
+const addBookContainer = document.querySelector("#add-book-container")
 const addBookBtn = document.querySelector("#add-book-btn");
 
 const myLibrary = [];
@@ -25,7 +26,10 @@ function displayBookCards(){
 
 function addBookCard(){
     const infoCard = document.createElement("div")
-    cardContainer.appendChild(infoCard)
+    infoCard.className = "add-book-btn-card" 
+    addBookContainer.appendChild(infoCard)
+
+    infoCard.textContent = "TEST"
 }
 
 
