@@ -1,5 +1,5 @@
 const cardContainer = document.querySelector("#container");
-
+const addBookBtn = document.querySelector("#add-book-btn");
 
 const myLibrary = [];
 
@@ -15,15 +15,25 @@ function addBookToLibrary(){
 }
 
 function displayBookCards(){
-    
     for (let i = 0; i < myLibrary.length; i++) {
         const bookCard = document.createElement("div")
         bookCard.className = "book-card"
         cardContainer.appendChild(bookCard);
         bookCard.textContent = myLibrary[i].title;    
-            
     }
 }
 
+function addBookCard(){
+    const infoCard = document.createElement("div")
+    cardContainer.appendChild(infoCard)
+}
+
+
 addBookToLibrary();
 displayBookCards();
+
+
+addBookBtn.addEventListener('click', () => {
+    addBookCard();
+})
+
