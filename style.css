@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    border: 0;
+}
+#title {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5rem;
+}
+
+#container {
+    height: 10rem;
+    width: 80%;
+    border: 1px solid green;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.book-card{
+    flex: 1 1 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.book-card:hover{
+    background-color: green;
+    transition: 0.5s;
+}
+
+#add-book-btn{
+    border-radius: 15px;
+    display: block;
+    margin: 2rem auto;
+    text-align: center;  
+    border: 1px solid green;
+    padding: 1rem;
+    width: auto;  
+    height: auto;  
+}
+
+#add-book-btn:hover{
+    background-color: green;
+    transition: 0.5s;
+}

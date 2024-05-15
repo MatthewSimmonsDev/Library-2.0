@@ -11,6 +11,7 @@ function addBookToLibrary(){
     
     myLibrary.push(new Book("test"));
     myLibrary.push(new Book("test2"));
+    myLibrary.push(new Book("test3"));
 }
 
 function displayBookCards(){
