@@ -1,5 +1,6 @@
 const cardContainer = document.querySelector("#container");
 
+
 const myLibrary = [];
 
 function Book(title){
@@ -7,14 +8,21 @@ function Book(title){
 }
 
 function addBookToLibrary(){
-
+    
     myLibrary.push(new Book("test"));
-    console.log(cardContainer)
-    // cardContainer.innerHTML = "test";
+    myLibrary.push(new Book("test2"));
 }
 
 function displayBookCards(){
-
+    
+    for (let i = 0; i < myLibrary.length; i++) {
+        const bookCard = document.createElement("div")
+        bookCard.className = "book-card"
+        cardContainer.appendChild(bookCard);
+        bookCard.textContent = myLibrary[i].title;    
+            
+    }
 }
 
 addBookToLibrary();
+displayBookCards();
