@@ -1,7 +1,9 @@
+/* Reset */
 *{
     margin: 0;
     border: 0;
 }
+/* Library header */
 #title {
     height: 5rem;
     display: flex;
@@ -11,6 +13,7 @@
     font-size: 2.5rem;
 }
 
+/* Container for card container */
 #container {
     height: auto;
     width: 80%;
@@ -24,6 +27,7 @@
     
 }
 
+/* Cards for the books */
 .book-card, .add-book-btn-card{
     flex: 1 1 33%;
     min-height: 5rem;
@@ -41,6 +45,7 @@
     transition: 0.5s;
 }
 
+/* Container for add book button */
 #add-book-container{
     width: 80%;
     margin-left: auto;
@@ -73,10 +78,23 @@
    
 }
 
+/* Submit button */
 input{
     font-size: 1rem;
 }
 
+/* Book title and author text */
+.book-card h3{
+    margin: auto;
+}
+
+/* Delete button */
+.book-card button{
+    border-radius: 15px;
+    margin: auto;
+}
+
 .book-card button:hover{
     background-color: red;
+    
 }
