@@ -92,7 +92,7 @@ input{
 /* Delete button */
 .book-card button{
     border-radius: 15px;
-    margin: auto;
+    margin-right: 1rem;
 }
 
 .book-card button:hover{
