@@ -60,7 +60,7 @@ function createForm(){
     title.className = 'book-title';
     title.setAttribute('type', "text");
     title.setAttribute('title', "title");
-    title.setAttribute('placeholder', "Book Title");
+    title.setAttribute('placeholder', "Title");
     form.appendChild(title);
     
     //Section for author of the book
@@ -68,7 +68,7 @@ function createForm(){
     author.className = 'book-author';
     author.setAttribute('type', "text");
     author.setAttribute('author', "author");
-    author.setAttribute('placeholder', "Book Author");
+    author.setAttribute('placeholder', "Author");
     form.appendChild(author);
 
     // Form's submit button
